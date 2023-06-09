@@ -1,1 +1,83 @@
-site
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Site</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    
+    .sidebar {
+      background-color: #f2f2f2;
+      width: 20%;
+      padding: 20px;
+    }
+    
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .sidebar a:hover {
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#" onclick="changeContent('Sobre mim')">Sobre mim</a>
+      <a href="titanic.html" onclick="changeContent('Formação Educacional')">Formação Educacional</a>
+      <a href="#" onclick="changeContent('Experiência Profissional')">Experiência Profissional</a>
+      <a href="#" onclick="changeContent('Portfólio de Projetos')">Portfólio de Projetos</a>
+    </div>
+    <div class="content" id="content">
+      <h1>Welcome to My Site</h1>
+      <p>This is the default content.</p>
+    </div>
+  </div>
+
+  <script>
+    function changeContent(page) {
+      var contentDiv = document.getElementById('content');
+
+      if (page === 'Sobre mim') {
+        contentDiv.innerHTML = `
+          <h1>Welcome to My Site</h1>
+          <p>This is the home page.</p>
+        `;
+      } else if (page === 'Formação Educacional') {
+        contentDiv.innerHTML = `
+          <h1>About</h1>
+          <p>This is the about page.</p>
+        `;
+      } else if (page === 'Experiência Profissional') {
+        contentDiv.innerHTML = `
+          <h1>Services</h1>
+          <p>This is the services page.</p>
+        `;
+      } else if (page === 'Portfólio de Projetos') {
+        contentDiv.innerHTML = `
+          <h1>Contact</h1>
+          <p>This is the contact page.</p>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
