@@ -42,13 +42,55 @@
   <div class="container">
     <div class="sidebar">
       <a href="#" onclick="changeContent('Sobre mim')">Sobre mim</a>
-      <a href="titanic.html" onclick="changeContent('Formação Educacional')">Formação Educacional</a>
+      <a href="#" onclick="changeContent('Formação Educacional')">Formação Educacional</a>
       <a href="#" onclick="changeContent('Experiência Profissional')">Experiência Profissional</a>
       <a href="#" onclick="changeContent('Portfólio de Projetos')">Portfólio de Projetos</a>
     </div>
     <div class="content" id="content">
-      <h1>Welcome to My Site</h1>
-      <p>This is the default content.</p>
+        <h2>Olá, seja bem-vindo!</h2>
+        <p>Eu sou Hermann Vargens</p>
+
+        <p>sou servidor público federal há 13 anos. Embora não atue diretamente na área de dados, sou apaixonado pelo universo dos dados e procuro sempre utilizar o conhecimento e as ferramentas da Análise de Dados e Ciência de Dados em busca de soluções!</p>
+
+        <p>Tenho background na área de Engenharia Química e também Física, que me ajudaram a desenvolver as habilidades de pensamento analítico e comunicação.</p>
+            
+        <p>Amo estudar, e encontrei nas Ciências de Dados a oportunidade de unir matemática e computação pra resolver diferentes tipos de problemas de negócios.</p>
+
+        <h3>Habilidades</h3>
+        <h4>Linguagens de programação e bancos de dados</h4>
+        
+        <ul style="list-style-type:disc;">
+
+            <li>Python como foco em análise dados, pacotes como Pandas.</li>
+            <li>Web scraping com Python.</li>
+            <li>SQL para extração de dados.</li>
+
+        </ul>
+
+        <h4>Estatística e aprendizado de máquina</h4>
+        
+        <ul style="list-style-type:disc;">
+
+        <li>Pacotes de Machine Learning (Sklearn e Scipy).</li>
+        <li>Pacotes de análise de dados (Pandas).</li>
+        <li>Estatísticas descritivas.</li>
+        <li>Técnicas de Seleção, Validação e Otimização de Hiperparâmetros.</li>
+        
+        </ul>    
+        <h4>Engenharia de software</h4>
+        
+        <ul style="list-style-type:disc;">
+        
+            <li>Git, GitHub e Ambiente Virtual.</li>
+            <li>Streamlit, Flask.</li>
+        </ul>
+
+        <h4>Visualização de dados</h4>
+            <ul style="list-style-type:disc;">
+                <li>Matplotlib, Seaborn e Plotly.</li>
+                <li>Power BI</li>
+            </ul>
+
     </div>
   </div>
 
@@ -58,18 +100,101 @@
 
       if (page === 'Sobre mim') {
         contentDiv.innerHTML = `
-          <h1>Welcome to My Site</h1>
-          <p>This is the home page.</p>
+        <h2>Olá, seja bem-vindo!</h2>
+        <p>Eu sou Hermann Vargens</p>
+
+        <p>sou servidor público federal há 13 anos. Embora não atue diretamente na área de dados, sou apaixonado pelo universo dos dados e procuro sempre utilizar o conhecimento e as ferramentas da Análise de Dados e Ciência de Dados em busca de soluções!</p>
+
+        <p>Tenho background na área de Engenharia Química e também Física, que me ajudaram a desenvolver as habilidades de pensamento analítico e comunicação.</p>
+            
+        <p>Amo estudar, e encontrei nas Ciências de Dados a oportunidade de unir matemática e computação pra resolver diferentes tipos de problemas de negócios.</p>
+
+        <h3>Habilidades</h3>
+        <h4>Linguagens de programação e bancos de dados</h4>
+        
+        <ul style="list-style-type:disc;">
+
+            <li>Python como foco em análise dados, pacotes como Pandas.</li>
+            <li>Web scraping com Python.</li>
+            <li>SQL para extração de dados.</li>
+
+        </ul>
+
+        <h4>Estatística e aprendizado de máquina</h4>
+        
+        <ul style="list-style-type:disc;">
+
+        <li>Pacotes de Machine Learning (Sklearn e Scipy).</li>
+        <li>Pacotes de análise de dados (Pandas).</li>
+        <li>Estatísticas descritivas.</li>
+        <li>Técnicas de Seleção, Validação e Otimização de Hiperparâmetros.</li>
+        
+        </ul>    
+        <h4>Engenharia de software</h4>
+        
+        <ul style="list-style-type:disc;">
+        
+            <li>Git, GitHub e Ambiente Virtual.</li>
+            <li>Streamlit, Flask.</li>
+        </ul>
+
+        <h4>Visualização de dados</h4>
+            <ul style="list-style-type:disc;">
+                <li>Matplotlib, Seaborn e Plotly.</li>
+                <li>Power BI</li>
+            </ul>
+
         `;
       } else if (page === 'Formação Educacional') {
         contentDiv.innerHTML = `
-          <h1>About</h1>
-          <p>This is the about page.</p>
+        <table>
+    <thead>
+        <h1>Formação Educacional</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Curso profissionalizante - IBM Data Science</td>
+        <td>2022</td>
+        <td>Nesse curso, de nível iniciante/médio, pude aprender a usar as principais ferramentas e metodologia de trabalho do cientista de dados. Estudo dos problemas, Análise de dados, Análise Exploratória de Dados, Machine Learning, feitas em Python, com diversos pacotes, como Pandas, Numpy, Seaborn e Scikit-Learn.</td>
+      </tr>
+      <tr>
+        <td>Licenciatura em Física - Universidade Federal do Pará</td>
+        <td>2016 - 2022</td>
+        <td>Minha paixão por estudar me levou a voltar à academia, como hobby, e explorar minha curiosidade pelos processos que tornam a existência do universo possível. Pude desenvolver ainda mais diversas habilidades na área de matemática, física, computação, e também comunicação, por ser um curso de licenciatura, onde por várias vezes, estive diantes de grandes grupos para ministrar aulas.</td>
+      </tr>
+      <tr>
+        <td>Especialização em Engenharia de Produção - PUC Minas</td>
+        <td>2014 - 2015</td>
+        <td>Nessa especialização, tive contato com processos diferentes dos quais já tinha alguma experiência, como Qualidade, Logística, e Processos. Isso me ajudou a desenvolver mais o pensamento analítico, com foco na resolução de problemas.</td>
+      </tr>
+      <tr>
+        <td>Mestrado em Engenharia Química - Universidade Federal do Pará</td>
+        <td>2009 - 2011</td>
+        <td>Logo após a conclusão do curso de graduação, dei início ao mestrado, onde pude estudar com mais profundidade a área de simulação de modelagem de processos da indústria, mais especificamente relacionados aos processos de separação de fases. Isso envolveu conhecimento estatístico, de computação, físico, químico e matemático.</td>
+      </tr>
+      <tr>
+        <td>Bacharel em Engenharia Química - Universidade Federal do Pará</td>
+        <td>2004 - 2009</td>
+        <td>Aos 17 anos, iniciei meus estudos no curso de graduação em Engenharia Química. Minha afinidade com as ciências exatas permitiram que pudesse aprofundar ainda mais as habilidades nessa área.</td>
+      </tr>
+
+    </tbody>
+  </table>
         `;
       } else if (page === 'Experiência Profissional') {
         contentDiv.innerHTML = `
-          <h1>Services</h1>
-          <p>This is the services page.</p>
+        <table>
+    <thead>
+        <h1>Epxeriência Profissional</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Engenheiro de Tecnologia Militar</td>
+        <td>2012 - atual</td>
+        <td>Como engenheiro químico, tomei posse em cargo efetivo no Ministério da Defesa, onde pude colocar em prática diversos projetos na área de manutenção de produtos de defesa, laboratório químico e tratamento de efluentes. Além disso, desempenhei outras funções na assessoria de gestão de processos e meio ambiente. Desenvolvi diversas habilidades, como comunicação, liderença e trabalho em equipe.</td>
+      </tr>
+    </tbody>
+  </table>
         `;
       } else if (page === 'Portfólio de Projetos') {
         contentDiv.innerHTML = `
