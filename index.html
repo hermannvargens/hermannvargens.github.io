@@ -45,9 +45,10 @@
       <a href="#" onclick="changeContent('Formação Educacional')">Formação Educacional</a>
       <a href="#" onclick="changeContent('Experiência Profissional')">Experiência Profissional</a>
       <a href="#" onclick="changeContent('Portfólio de Projetos')">Portfólio de Projetos</a>
+      <a href="#" onclick="changeContent('Contatos')">Contatos</a>
     </div>
     <div class="content" id="content">
-        <h2>Olá, seja bem-vindo!</h2>
+        <p>Olá, seja bem-vindo!</p>
         <p>Eu sou Hermann Vargens</p>
 
         <p>sou servidor público federal há 13 anos. Embora não atue diretamente na área de dados, sou apaixonado pelo universo dos dados e procuro sempre utilizar o conhecimento e as ferramentas da Análise de Dados e Ciência de Dados em busca de soluções!</p>
@@ -100,7 +101,7 @@
 
       if (page === 'Sobre mim') {
         contentDiv.innerHTML = `
-        <h2>Olá, seja bem-vindo!</h2>
+        <p>Olá, seja bem-vindo!</p>
         <p>Eu sou Hermann Vargens</p>
 
         <p>sou servidor público federal há 13 anos. Embora não atue diretamente na área de dados, sou apaixonado pelo universo dos dados e procuro sempre utilizar o conhecimento e as ferramentas da Análise de Dados e Ciência de Dados em busca de soluções!</p>
@@ -153,9 +154,11 @@
     </thead>
     <tbody>
       <tr>
-        <td>Curso profissionalizante - IBM Data Science</td>
+        <td>Certificação Profissional - IBM Data Science</td>
         <td>2022</td>
-        <td>Nesse curso, de nível iniciante/médio, pude aprender a usar as principais ferramentas e metodologia de trabalho do cientista de dados. Estudo dos problemas, Análise de dados, Análise Exploratória de Dados, Machine Learning, feitas em Python, com diversos pacotes, como Pandas, Numpy, Seaborn e Scikit-Learn.</td>
+        <td>Nesse curso, de nível iniciante/médio, pude aprender a usar as principais ferramentas e metodologia de trabalho do cientista de dados. 
+            Estudo dos problemas, Análise de dados, Análise Exploratória de Dados, Machine Learning, 
+            feitas em Python, com diversos pacotes, como Pandas, Numpy, Seaborn e Scikit-Learn.<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/aj3k9sybbp45"> Verificar certificado aqui.</a></td>
       </tr>
       <tr>
         <td>Licenciatura em Física - Universidade Federal do Pará</td>
@@ -201,8 +204,17 @@
           <h1>Contact</h1>
           <p>This is the contact page.</p>
         `;
-      }
+    
+    } else if (page === 'Contatos') {
+        contentDiv.innerHTML = `
+        <ul style="list-style-type:disc;">
+            <li>E-MAIL: hermannvargens@gmail.com</li>
+            <li>MEDIUM: https://medium.com/@hermannvargens</li>
+        `;
     }
+
+    }
+
   </script>
 </body>
 </html>
